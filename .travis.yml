@@ -3,6 +3,7 @@ node_js:
   - "6"
 deploy:
   provider: npm
+  email: "jstewart@wdtinc.com"
   on:
     tags: true
   api_key:
