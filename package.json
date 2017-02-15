@@ -1,0 +1,20 @@
+{
+  "name": "skywise-model",
+  "version": "1.0.7",
+  "description": "skywise-model-js",
+  "author": "Justin Stewart",
+  "email": "jstewart@wdtinc.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "vows tests/* --spec"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "btoa": "^1.1.2",
+    "es6-promise": "^4.0.5",
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "devDependencies": {
+    "vows": "^0.8.1"
+  }
+}
