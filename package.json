@@ -1,11 +1,8 @@
 {
   "name": "npm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "skywise-model-js",
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Justin Stewart",
   "license": "MIT",
   "dependencies": {
