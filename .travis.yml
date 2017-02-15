@@ -1,8 +1,7 @@
 language: javascript
-python:
-- '2.7'
 deploy:
   provider: npm
   on:
     tags: true
-
+  api_key:
+    secure: DJxZ/xw6h7BDzogg+QJqj24z6rWhtfz0SVU4B8+sN9QviduI22ZU2aL3XqhQ78tIF+5waw/8E1HawVhzHLJUvlnE/xYEXcNxkrbWqctkJoPYU4JiFnNqOBxqHc/4YX7dpJ8pij/qHBxdr/jTagPRoq67rSt/6DB9xxA1P3x0XhG80tEvYPue33fr6SXQ/PM2JX86t3dsHOYDQ4R8DoB9NTPb3lvEa+jiK8RYhFE9ZzdvMf9d0ZkHLAC3r5eqmdL5DGiJBZDZEsrVegw93090TO9rLM1rri7y4fhNo0eqH0UxA9OC1JYebDUtOGaonx0oDdv40QwbcwO8yozLVvJhFlMlcAhmmYaOE030RwCTIh0qjOGZmz/YvTSzaqNHdljnTvN5Bntrb26ajK3pL7peMKJB8ru6cXV1ITJ92AUUHMPXsWPK1EWnjewgOc1hK2nYQ6mnQk/RdRjoNJ7uq8S8oXMOpT5oXSoIQbEZvljZBk+7ypSfpl62FJPIeeeL3+AqTOxtOfgSHko3R99KUdAG5LiE8o67F2a/XCOYsJ4Hcu0gH0GolrnbfXMi5Tp0Oa80nQ3m6CEdcpDInBD/TpNlIncdP76zIaBBP709UzLCXDGE+E36mVbD0n1BKmY+4M/K2xN9PLUHoZZo8XH17HbAL3E6DbjJ6I5Ibcj/ZeKh8uk=
