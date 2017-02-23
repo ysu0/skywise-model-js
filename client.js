@@ -35,6 +35,11 @@ class Client {
     return this.fetch(`${this.site}${path}`)
   }
 
+  listModelVariables(modelId){
+    let path = `/models/${modelId}/variables`
+    return this.fetch(`${this.site}${path}`)
+  }
+
   getForecast(forecastId){
     let path = `/forecasts/${forecastId}`
     return this.fetch(`${this.site}${path}`)
@@ -45,12 +50,12 @@ class Client {
     return this.fetch(`${this.site}${path}`)
   }
 
-  getVariable(variableId){
+  getForecastVariable(variableId){
     let path = `/variables/${variableId}`
     return this.fetch(`${this.site}${path}`)
   }
 
-  listVariables(forecastId){
+  listForecastVariables(forecastId){
     let path = `/forecasts/${forecastId}/variables`
     return this.fetch(`${this.site}${path}`)
   }
