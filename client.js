@@ -40,6 +40,11 @@ class Client {
     return this.fetch(`${this.site}${path}`)
   }
 
+  getLatestForecast(modelId){
+    let path = `/models/${modelId}/latest-forecast`
+    return this.fetch(`${this.site}${path}`)
+  }
+
   getForecast(forecastId){
     let path = `/forecasts/${forecastId}`
     return this.fetch(`${this.site}${path}`)
