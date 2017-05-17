@@ -4,8 +4,9 @@
   "description": "skywise-model-js",
   "author": "Justin Stewart",
   "email": "jstewart@wdtinc.com",
-  "main": "index.js",
+  "main": "build/client.js",
   "scripts": {
+    "prepublish": "babel client.js --out-file build/client.js",
     "test": "vows tests/* --spec"
   },
   "license": "MIT",
@@ -15,6 +16,8 @@
     "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
     "vows": "^0.8.1"
   }
 }
