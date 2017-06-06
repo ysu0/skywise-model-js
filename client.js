@@ -2,6 +2,7 @@
 require('es6-promise').polyfill()
 require('isomorphic-fetch')
 
+var queryString = require('query-string')
 var btoa = require('btoa')
 
 
@@ -65,9 +66,15 @@ class Client {
     return this.fetch(`${this.site}${path}`)
   }
 
-  getTimeSeries(variableId, latitude, longitude){
-    let path = `/variables/${variableId}/timeseries/${latitude}/${longitude}`
-    return this.fetch(`${this.site}${path}`)
+  getTimeSeries(forecastId, variableId, latitude, longitude, parameters){
+    let path = `/forecasts/${forecastId}/variables/${variableId}/timeseries/${latitude}/${longitude}`
+    var query = '';
+
+    if(parameters) {
+      query = '?' + queryString.stringify(parameters)
+    }
+
+    return this.fetch(`${this.site}${path}${query}`)
   }
 }
 
