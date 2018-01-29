@@ -77,10 +77,6 @@ class Client {
     return this.fetch(`${this.site}${path}${query}`)
   }
 
-  getTimeSeries(forecastId, variableName, latitude, longitude){
-    let path = `/forecasts/${forecastId}/variables/${variableName}/timeseries/${latitude}/${longitude}`
-    return this.fetch(`${this.site}${path}`)
-  }
 }
 
 
