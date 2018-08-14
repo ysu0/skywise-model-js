@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "btoa": "^1.1.2",
+    "btoa": "~1.1.2",
     "es6-promise": "^4.0.5",
     "isomorphic-fetch": "^2.2.1",
     "query-string": "^4.3.4"
